@@ -1051,7 +1051,7 @@ let WeatherService = class WeatherService {
         city = city || 'Tel Aviv';
         const api_key = '4de493cca8b2a993d11df65848dac270';
         const units = 'metric';
-        return this.http.get(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=${api_key}&units=${units}`)
+        return this.http.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=${api_key}&units=${units}`)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])((detail) => {
             let weatherData = {};
             weatherData['main'] = {};
